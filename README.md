@@ -3,43 +3,28 @@ EV Charging Demand Prediction and Usage Pattern Analysis using Machine Learning,
 EV Charging Demand Prediction and Usage Pattern Analysis
 
 <p align="center">
-  <strong>A Machine Learning-Based Approach to EV Charging Demand Analysis and Forecasting</strong>
+  **Machine Learning-Based EV Charging Demand Analysis and Forecasting**
 </p>1. Project Overview
 
-Electric vehicle adoption is increasing the demand for efficient charging infrastructure and better energy management. Understanding charging behavior and predicting demand are important for improving charging station utilization and planning.
+Electric vehicle adoption is increasing rapidly, creating a need for efficient charging infrastructure and demand management.
 
-EV Charging Demand Prediction and Usage Pattern Analysis is a machine learning project designed to analyze electric vehicle charging patterns, identify demand trends, and predict charging demand using historical charging data.
+This project focuses on analyzing electric vehicle charging patterns and predicting charging demand using Machine Learning techniques. It combines data preprocessing, exploratory data analysis, regression, classification, time-series forecasting, and Explainable AI.
 
-The project integrates data analytics, predictive modeling, time-series forecasting, and Explainable AI into an interactive Streamlit dashboard.
+An interactive Streamlit dashboard is developed to visualize analytical insights, evaluate model performance, and provide prediction capabilities.
 
 2. Project Objectives
 
 - Analyze historical EV charging usage patterns.
-- Identify demand variations across locations and time periods.
+- Identify charging demand variations across locations and time periods.
 - Perform data preprocessing and feature engineering.
-- Develop regression models for charging demand prediction.
-- Apply classification algorithms to identify demand categories.
-- Analyze historical trends using time-series techniques.
-- Generate future demand forecasts.
-- Interpret model predictions using SHAP and LIME.
-- Present analytical results through an interactive dashboard.
+- Develop regression models for demand prediction.
+- Implement classification models for demand analysis.
+- Perform time-series analysis and future demand forecasting.
+- Evaluate machine learning model performance.
+- Interpret predictions using SHAP and LIME.
+- Develop an interactive Streamlit analytics dashboard.
 
-3. Project Architecture
-
-The project follows a structured machine learning workflow:
-
-1. Data Collection and Understanding
-2. Data Cleaning and Preprocessing
-3. Exploratory Data Analysis (EDA)
-4. Feature Engineering
-5. Regression Model Development
-6. Classification Model Development
-7. Time-Series Analysis and Forecasting
-8. Model Evaluation and Comparison
-9. Explainable AI (SHAP and LIME)
-10. Streamlit Dashboard Development
-
-4. Technology Stack
+3. Technology Stack
 
 Category| Technologies
 Programming Language| Python
@@ -48,12 +33,26 @@ Data Visualization| Matplotlib, Seaborn
 Machine Learning| Scikit-learn
 Advanced ML| XGBoost, LightGBM
 Explainable AI| SHAP, LIME
-Dashboard| Streamlit
+Dashboard Development| Streamlit
 Development Environment| Jupyter Notebook
+
+4. Project Workflow
+
+1. Data Understanding
+2. Data Cleaning and Preprocessing
+3. Exploratory Data Analysis (EDA)
+4. Feature Engineering
+5. Regression Model Development
+6. Classification Model Development
+7. Time-Series Analysis
+8. Future Demand Forecasting
+9. Model Evaluation and Comparison
+10. Explainable AI using SHAP and LIME
+11. Interactive Dashboard Development
 
 5. Machine Learning Algorithms
 
-Regression
+Regression Algorithms
 
 - Linear Regression
 - Decision Tree Regressor
@@ -62,7 +61,7 @@ Regression
 - XGBoost Regressor
 - LightGBM Regressor
 
-Classification
+Classification Algorithms
 
 - Logistic Regression
 - Decision Tree Classifier
@@ -72,52 +71,50 @@ Classification
 - XGBoost Classifier
 - LightGBM Classifier
 
-Models are evaluated using appropriate performance metrics to compare predictive performance.
+6. Time-Series Analysis
 
-6. Explainable Artificial Intelligence
+Time-series analysis is performed to understand historical EV charging demand patterns.
 
-The project incorporates:
+Key activities include:
 
-- SHAP: Evaluates feature contributions to model predictions.
-- LIME: Provides local explanations for individual predictions.
+- Hourly demand analysis
+- Daily demand analysis
+- Weekly demand analysis
+- Monthly demand analysis
+- Lag feature analysis
+- Rolling average analysis
+- Future demand forecasting
 
-These techniques help improve the interpretability and transparency of machine learning results.
+7. Explainable AI
 
-7. Interactive Dashboard
+The project integrates Explainable AI techniques to improve model interpretability.
 
-The Streamlit application provides an integrated interface for exploring project results.
+SHAP (SHapley Additive exPlanations)
 
-Dashboard modules include:
+- Identifies important features.
+- Explains feature contributions to model predictions.
 
-- Dashboard Overview
-- Data Analytics
-- Location Analysis
-- Time-Series Analysis
-- Regression Prediction
-- Classification Prediction
-- Future Demand Forecast
-- Model Performance
-- Explainable AI
-- Dataset Explorer
+LIME (Local Interpretable Model-Agnostic Explanations)
 
-8. Project Directory Structure
+- Explains individual model predictions.
+- Helps understand the influence of input features.
 
-EV-Charging-Demand-Prediction/
-│
-├── data/
-├── notebooks/
-├── models/
-├── outputs/
-├── streamlit/
-│   └── app.py
-│
-├── requirements.txt
-├── README.md
-└── PROJECT_DOCUMENTATION.md
+8. Streamlit Dashboard Features
 
-The directory structure above is a high-level representation. Update it to match the final repository contents.
+The interactive dashboard includes the following modules:
 
-9. Installation and Execution
+1. Dashboard Overview
+2. Data Analytics
+3. Location Analysis
+4. Time-Series Analysis
+5. Regression Prediction
+6. Classification Prediction
+7. Future Demand Forecast
+8. Model Performance
+9. Explainable AI
+10. Dataset Explorer
+
+9. Installation and Setup
 
 Prerequisites
 
@@ -133,41 +130,61 @@ Step 2: Navigate to the Project Directory
 
 cd EV-Charging-Demand-Prediction
 
-Step 3: Install Required Packages
+Step 3: Install Dependencies
 
 pip install -r requirements.txt
 
-Step 4: Launch the Streamlit Application
+Step 4: Run the Streamlit Dashboard
 
 streamlit run streamlit/app.py
 
-10. Expected Outcomes
+10. Model Evaluation
+
+Machine Learning models are evaluated using appropriate performance metrics.
+
+Regression Metrics
+
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R-squared (R²)
+
+Classification Metrics
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- ROC-AUC
+
+11. Expected Outcomes
 
 - Identification of EV charging usage patterns.
-- Analysis of location-based and time-based demand variations.
-- Machine learning-based demand prediction.
+- Analysis of location-based demand variations.
+- Machine Learning-based demand prediction.
 - Classification of charging demand patterns.
-- Historical trend analysis and future demand forecasting.
-- Model interpretation through Explainable AI.
-- Interactive visualization of analytical results.
+- Historical demand trend analysis.
+- Future demand forecasting.
+- Explainable model predictions.
+- Interactive data visualization.
 
-11. Applications
+12. Applications
 
 - EV charging station planning
 - Charging demand analysis
-- Energy consumption management
+- Energy management
 - Charging infrastructure optimization
 - Data-driven decision support
 
-12. Future Enhancements
+13. Future Enhancements
 
-- Integration with real-time EV charging station data.
-- Deployment through a cloud platform.
-- Integration of additional forecasting algorithms.
+- Integration with real-time EV charging data.
+- Cloud-based dashboard deployment.
+- Advanced forecasting techniques.
 - Model optimization and performance improvement.
-- Automated model retraining with updated datasets.
+- Automated model retraining.
 
-13. Author
+14. Author
 
 Kaveeshwar A
 
@@ -178,6 +195,7 @@ Project Domain: Machine Learning | Data Analytics | Time-Series Forecasting | Ex
 ---
 
 <p align="center">
-  <strong>EV Charging Demand Prediction and Usage Pattern Analysis</strong><br/>
+  **EV Charging Demand Prediction and Usage Pattern Analysis**
+  <br>
   Machine Learning for Intelligent EV Charging Demand Analysis
 </p>
